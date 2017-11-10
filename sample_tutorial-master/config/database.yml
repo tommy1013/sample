@@ -28,7 +28,7 @@ test:
 
 production:
   <<: *default
-  database: sample
+  database: db/test.sqlite3
   username: root
   password: <%= ENV['DATABASE_PASSWORD'] %>
   socket: /var/lib/mysql/mysql.sock
