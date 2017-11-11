@@ -21,6 +21,9 @@ test:
 production:
   <<: *default
   database: sample
-  username: sample
+  username: root
   password: <%= ENV['DATABASE_PASSWORD'] %>
   socket: /var/lib/mysql/mysql.sock
+
+
+
